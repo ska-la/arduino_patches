@@ -1,5 +1,5 @@
 IMPORTANT.
-The repository was made solely for personal purpose.
+The repository was made solely for personal purpose to keep a stuff outdoor.
 
 DETAILS.
 Look at Wiki.
