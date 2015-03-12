@@ -1,1 +1,2 @@
-# arduino_pat
+IMPORTANT.
+The repository is made solely for personal purpose.
