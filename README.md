@@ -5,7 +5,7 @@ DETAILS.
 Look at Wiki.
 
 CONTENTS:
-* SD_soft_atmega328.patch - patch for a genuine SD library of Arduino IDE.
-* LiquidCrystal_I2C.patch - patch for a third-party LiquidCrystal_I2C library
+* SD_soft_atmega328.patch - patch to genuine SD library of Arduino IDE;
+* LiquidCrystal_I2C.patch - patch to third-party LiquidCrystal_I2C library.
 
 ---
