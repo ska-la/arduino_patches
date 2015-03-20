@@ -4,7 +4,7 @@ The repository was made solely for personal purpose to keep a stuff outdoor.
 
 **DETAILS.**
 
-Look at [Wikis](https://github.com/ska-la/arduino_patches/wiki). -->
+Look at [WIKIs](https://github.com/ska-la/arduino_patches/wiki). -->
 
 **CONTENTS:**
 * **_SD_soft_atmega328.patch_** - patch to genuine SD library of Arduino IDE;
@@ -14,4 +14,8 @@ Look at [Wikis](https://github.com/ska-la/arduino_patches/wiki). -->
 
 **Motto:**
 
-_Freedom borns Freedom.. Sloth and Ignorance_
+Freedom borns Freedom.. Sloth and Ignorance
+
+---
+
+[Contacts](mailto:akdotvokchusatgmaildotcom)
