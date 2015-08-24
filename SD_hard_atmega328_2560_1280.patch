@@ -1,0 +1,39 @@
+diff -Naur a/SD.cpp b/SD.cpp
+--- a/SD.cpp	2014-09-16 17:42:48.000000000 +0400
++++ b/SD.cpp	2015-08-20 08:32:27.983142092 +0300
+@@ -340,7 +340,9 @@
+     Return true if initialization succeeds, false otherwise.
+ 
+    */
+-  return card.init(SPI_HALF_SPEED, csPin) &&
++//--- made by SKA --- return card.init(SPI_HALF_SPEED, csPin) &&
++  return card.init(SPI_FULL_SPEED, csPin) &&
++//--- made by SKA --- return card.init(SPI_QUARTER_SPEED, csPin) &&
+          volume.init(card) &&
+          root.openRoot(volume);
+ }
+diff -Naur a/utility/Sd2Card.cpp b/utility/Sd2Card.cpp
+--- a/utility/Sd2Card.cpp	2014-09-16 17:42:48.000000000 +0400
++++ b/utility/Sd2Card.cpp	2015-08-20 08:31:02.240220026 +0300
+@@ -229,9 +229,9 @@
+   pinMode(SS_PIN, OUTPUT);
+   digitalWrite(SS_PIN, HIGH); // disable any SPI device using hardware SS pin
+   // Enable SPI, Master, clock rate f_osc/128
+-  SPCR = (1 << SPE) | (1 << MSTR) | (1 << SPR1) | (1 << SPR0);
++//--- made by SKA --- SPCR = (1 << SPE) | (1 << MSTR) | (1 << SPR1) | (1 << SPR0);
+   // clear double speed
+-  SPSR &= ~(1 << SPI2X);
++//--- made by SKA ---  SPSR &= ~(1 << SPI2X);
+ #endif  // SOFTWARE_SPI
+ 
+   // must supply min of 74 clock cycles with CS high.
+@@ -281,7 +281,8 @@
+   chipSelectHigh();
+ 
+ #ifndef SOFTWARE_SPI
+-  return setSckRate(sckRateID);
++//--- made by SKA --- return setSckRate(sckRateID);
++  return true;
+ #else  // SOFTWARE_SPI
+   return true;
+ #endif  // SOFTWARE_SPI
